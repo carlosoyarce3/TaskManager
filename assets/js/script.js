@@ -40,10 +40,6 @@ const displayTasks = () => {
     
 }
 
-function capitalizeFirstLetter(string) {
-    return string.charAt(0).toUpperCase() + string.slice(1);
-}
-
 const addChecker = (id) => {
     let checker = document.querySelector("#checkers");
     checker.innerHTML += `<input type="checkbox" onclick="actualizar(${id})" id="checker${id}">`
