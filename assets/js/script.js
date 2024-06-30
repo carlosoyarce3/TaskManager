@@ -32,7 +32,7 @@ const displayTasks = () => {
     let remover = document.querySelector("#removers");
     remover.innerHTML = "";
     Tasks.forEach((item) => {
-        html += `<li id="${item.id}">${item.id}<span>${capitalizeFirstLetter(item.tarea)}</span></li>`
+        html += `<li id="${item.id}">${item.id}<span>${item.tarea}</span></li>`
         addChecker(item.id);
         removeBtn(item.id);
     })
