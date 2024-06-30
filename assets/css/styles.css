@@ -1,0 +1,104 @@
+body{
+    font-family:  "Playwrite MX", cursive;
+    background-color: lightblue;
+    color: rgb(18, 124, 160);
+}
+
+main{
+    margin-inline: 1.5em;
+    overflow-y: scroll;
+    overflow: hidden;
+}
+
+.input p{
+    margin: 0;
+}
+
+.input input{
+    border: none;
+    width: 85%;
+    height: 2em;
+}
+
+#btnAdd{
+    border: none;
+    height: 2em;
+    width: 12%;
+    background-color: rgb(58, 104, 119);
+    color: white;
+}
+
+#btnAdd:hover{
+    background-color: white;
+    color: black;
+}
+
+.top{
+    margin-bottom: 5vh;
+}
+
+.bottom{
+    display: flex;
+    flex-direction: row;
+}
+
+.resumen{
+    width: 35%;
+}
+
+.resumen p{
+    margin: 0;
+}
+
+.resumen span{
+    font-weight: 900;
+    color: black;
+}
+
+
+.titles{
+    display: flex;
+    gap: 5px;
+    font-weight: 900;
+}
+
+.titles p{
+    margin: 0;
+}
+
+ul{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+#lista span{
+    margin-left: 10px;
+}
+
+.display{
+    display: flex;
+    flex-direction: row;
+}
+
+#checkers{
+    display: flex;
+    flex-direction: column;
+    margin-left: 20px;
+}
+
+#checkers input{
+    margin-top: 12px;
+    margin-bottom: 6px;
+}
+
+#removers{
+    display: flex;
+    flex-direction: column;
+    margin-left: 25px;
+}
+
+#removers i{
+    margin-top: 10px;
+    margin-bottom: 5px;
+}

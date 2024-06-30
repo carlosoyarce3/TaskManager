@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playwrite+MX:wght@100..400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <link rel="stylesheet" href="./assets/css/styles.css">
+    <title>ToDo List</title>
+</head>
+<body>
+    <main>
+        <div class="top">
+            <h1>ToDo List</h1>
+            <hr>
+            <div class="input">
+                <p>Nueva tarea</p>
+                <input type="text" id="newTask">
+                <button id="btnAdd">Agregar</button>
+            </div>
+        </div>
+        <div class="bottom">
+            <div class="resumen">
+                <p>Total: <span id="total"></span></p>
+                <p>Realizadas: <span id="done">0</span></p>
+            </div>
+            <div class="tareas" id="tasks">
+                <div class="titles">
+                    <p>id</p>
+                    <p>Tarea</p>
+                </div>
+                <div class="display">
+                    <ul id="lista">
+                        
+
+                    </ul>
+                    <div id="checkers">
+                        
+                    </div>
+                    <div id="removers">
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <script src="./assets/js/script.js"></script>
+</body>
+</html>
