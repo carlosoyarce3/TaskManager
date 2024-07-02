@@ -43,7 +43,7 @@ const displayTasks = () => {
 const addChecker = (id) => {
     let checker = document.querySelector("#checkers");
     let tareaIndex = Tasks.findIndex((tarea)=> tarea.id === id);
-    checker.innerHTML += `<input type="checkbox" onclick="actualizar(${id})" id="checker${id}" checked='${Tasks[tareaIndex].completada}'>`
+    checker.innerHTML += `<input type="checkbox" onclick="actualizar(${id})" id="checker${id}" checked='${!Tasks[tareaIndex].completada}'>`
 }
 
 const actualizar = (id) => {
