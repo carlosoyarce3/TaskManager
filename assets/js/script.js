@@ -50,12 +50,6 @@ const actualizar = (id) => {
     let tareaIndex = Tasks.findIndex((tarea)=> tarea.id === id);
     Tasks[tareaIndex].completada = !Tasks[tareaIndex].completada;
     let tareasRealizadas = Tasks.filter(tarea => tarea.completada == true);
-    if(Tasks[tareaIndex].completada == true){
-        document.getElementById(id).style.color = "rgb(0, 215, 0)";
-    }else{
-        document.getElementById(id).style.color = ""
-    }
-
 }
 
 
