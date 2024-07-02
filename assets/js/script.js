@@ -65,14 +65,14 @@ const remove = (id) => {
     let remover = "remover"+String(id);
     let lineChecker = document.getElementById(checker);
     let lineRemover = document.getElementById(remover);
-    let tareasRealizadas = Tasks.filter(tarea => tarea.completada == true);
-    document.querySelector("#done").innerHTML = tareasRealizadas.length;
     lineChecker.parentNode.removeChild(lineChecker);
     lineRemover.parentNode.removeChild(lineRemover);
     Tasks.splice(tareaIndex,1);
     displayTasks();
+    let tareasRealizadas = Tasks.filter(tarea => tarea.completada == true);
+    document.querySelector("#done").innerHTML = tareasRealizadas.length;
     total();
-    console.log(Tasks);
+    
 }
 
 
