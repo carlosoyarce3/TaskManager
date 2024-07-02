@@ -50,7 +50,7 @@ const actualizar = (id) => {
     let tareaIndex = Tasks.findIndex((tarea)=> tarea.id === id);
     Tasks[tareaIndex].completada = !Tasks[tareaIndex].completada;
     let tareasRealizadas = Tasks.filter(tarea => tarea.completada == true);
-    document.querySelector("#done").innerHTML = tareasRealizadas;
+    document.querySelector("#done").innerHTML = tareasRealizadas.length;
     
 }
 
