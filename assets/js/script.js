@@ -1,4 +1,4 @@
-ñlet Tasks = [
+let Tasks = [
     {id: 1,tarea: "Dominar el mundo",completada: false},{id: 2,tarea: "Luchar con el odio que me tengo",completada: false},{id: 3,tarea: "Contemplar el abismo",completada: false}
 ]
 
